@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</head>
+<body>
+    <script>
+
+        document.addEventListener("click", function(){
+            tellJoke();
+        });
+
+        var jokes = [
+            ["Why was 6 afraid of 7?", "Because 7, 8, 9!"],
+            ["What do you call cheese that's not yours?", "Nacho cheese!"],
+            ["What do elves learn in school?", "The elf-abet!"],
+            ["Which flower talks the most?", "Tulips, of course, because they have two lips!"]
+        ];
+
+        var currentIndex = 0;
+
+        function tellJoke() {
+            readLines(jokes[currentIndex]);
+            if(currentIndex === jokes.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+        }
+
+        function readLines(joke) {
+            joke.forEach(function(line) {
+                responsiveVoice.speak(line);
+            })
+        }
+
+    </script>
+</body>
+</html>
