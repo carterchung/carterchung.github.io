@@ -6,26 +6,20 @@
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
 <body>
-    <!-- <input onclick='tellJoke()' type='button' value='Tell joke' /> -->
     <script>
-
-        // document.addEventListener("click", function(){
-        //     tellJoke();
-        // });
 
         document.addEventListener("touchend", tellJoke, false);
 
-        // document.addEventListener("DOMContentLoaded", function(event) { 
-        //     setTimeout(function() {
-        //         tellJoke();
-        //     }, 2000);
-        // });
-
         var jokes = [
-            ["Why was 6 afraid of 7?", "Because 7, 8, 9!"],
+            ["What is a bunny's motto?", "Don't be mad, be hoppy!"],
+            ["Where do rabbits go on their honeymoon?", "On their bunny moon!"],
+            ["What do you call a sleeping bull?", "A bull dozer!"],
+            ["How can you tell the ocean is friendly?", "It waves!"],
+            ["Why shouldn't you tell an egg a joke?","Because it might crack up!"],
             ["What do you call cheese that's not yours?", "Nacho cheese!"],
             ["What do elves learn in school?", "The elf-abet!"],
-            ["Which flower talks the most?", "Tulips, of course, because they have two lips!"]
+            ["Which flower talks the most?", "Tulips, of course, because they have two lips!"],
+            ["What are twins favorite fruits?", "Pears!"]
         ];
 
         var currentIndex = 0;
