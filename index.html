@@ -15,7 +15,9 @@
         // document.addEventListener("touchend", tellJoke, false);
 
         document.addEventListener("DOMContentLoaded", function(event) { 
-            tellJoke();
+            setTimeout(function() {
+                tellJoke();
+            }, 2000);
         });
 
         var jokes = [
