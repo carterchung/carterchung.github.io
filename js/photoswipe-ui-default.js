@@ -62,7 +62,7 @@ var PhotoSwipeUI_Default =
 				var captionTemplate = [
 					'<div>',
 						item.title,
-						'<div>',
+						'<div class="caption">',
 							'<small>',
 									item.caption || '',
 							'</small>',

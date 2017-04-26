@@ -11,6 +11,9 @@
 	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
 
 */
+body {
+  font-family: Arial, sans-serif;
+}
 /*
 	
 	1. Buttons
@@ -262,21 +265,27 @@ a.pswp__share--download:hover {
  */
 .pswp__caption {
   position: absolute;
+  text-align: center;
   left: 0;
   bottom: 60px;
   width: 100%;
   min-height: 44px; }
   .pswp__caption small {
-    font-size: 30px;
+    font-size: 4rem;
     color: #BBB; }
 
+.caption {
+    text-align: left;
+    line-height: 4rem;
+}
+
 .pswp__caption__center {
-  text-align: left;
-  max-width: 420px;
+  /*text-align: left;*/
+  /*max-width: 420px;*/
   margin: 0 auto;
-  font-size: 64px;
-  padding: 10px;
-  line-height: 30px;
+  font-size: 10rem;
+  padding: 50px;
+  line-height: 10rem;
   color: #CCC; }
 
 .pswp__caption--empty {
@@ -285,6 +294,16 @@ a.pswp__share--download:hover {
 /* Fake caption element, used to calculate height of next/prev image */
 .pswp__caption--fake {
   visibility: hidden; }
+
+/*@media only screen and (min-width: 768px) {
+    .pswp__caption small {
+      font-size: 1rem;
+    }
+    .pswp__caption__center {
+      font-size: 4rem;
+      line-height: 1rem;
+    }
+}*/
 
 /*
 
@@ -480,3 +499,7 @@ a.pswp__share--download:hover {
 
 .pswp--minimal--dark .pswp__top-bar {
   background: none; }
+
+#testImage {
+  width: 100%;
+}
